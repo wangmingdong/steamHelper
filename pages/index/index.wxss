@@ -1,0 +1,30 @@
+.sp-new-container{
+  display:flex;
+  flex-direction:column;
+  width:100%;
+}
+
+.sp-new{
+  min-height:88rpx;
+  display:flex;
+  justify-content:space-between;
+  padding:25rpx;
+  border-bottom:1px solid #e2e2e2;
+  flex-direction:column;
+}
+.sp-new-title{
+  display:flex;
+  flex-direction:column;
+  margin-right:10rpx;
+  font-weight:bold;
+  font-size: 30rpx;
+}
+.sp-new-name{
+  flex-direction:row;
+  flex-wrap:no-wrap;
+  display:flex;
+}
+.sp-new-date{
+  justify-content:flex-end;
+  display:flex;
+}

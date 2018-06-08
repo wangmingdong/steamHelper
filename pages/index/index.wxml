@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<import src="../wxParse/wxParse.wxml"/>
+<view class="container">
+  <view class="sp-new-container">
+    <view class="sp-new" wx:key="gid" wx:for="{{newsData}}">
+      <view class="sp-new-title">
+      {{item.title}}
+      </view>
+      <template is="wxParse" data="{{wxParseData : self['article'+index].nodes }}"/>
+      <view class="sp-new-date">{{item.fmtDate}}</view>
+    </view>
+  </view>
+</view>

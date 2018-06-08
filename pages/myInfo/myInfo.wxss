@@ -1,0 +1,47 @@
+/* pages/myInfo/myInfo.js.wxss */
+.info-container{
+  /* background-color: #eee; */
+}
+.userinfo {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  width:100%;
+  justify-content:center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-avatar image{
+  width:100%;
+  height:100%;
+}
+
+.sp-form-container{
+  width: 100%;
+  display:flex;
+  flex-direction:column;
+  border:1rpx solid #eee;
+}
+
+.sp-form-list{
+  display: flex;
+  justify-content: space-between;
+  margin: 20rpx;
+  /* border-bottom: 1rpx solid #eee; */
+}
+
+.sp-form-title{
+  width: 50%;
+  text-align: right;
+  padding-right: 20rpx;
+}
+.sp-form-content{
+  width: 50%;
+  padding-left: 20rpx;
+}

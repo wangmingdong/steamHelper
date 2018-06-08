@@ -1,0 +1,35 @@
+/* pages/friends/friends.wxss */
+.state-offline{
+  background-color: #eee;
+  color:#7e8182;
+}
+.user-state{
+  flex-wrap:no-wrap;
+  display:flex;
+  align-items:center;
+}
+.user-state.state-online{
+  color: #36d801;
+}
+.user-state.state-busy{
+  color: #fb7211;
+}
+.user-state.state-leave{
+  color: #11d0fb;
+}
+.user-state.state-dndst{
+  color: #a111fb;
+}
+.user-state.state-deal{
+  color: #fba811;
+}
+.user-state.state-play{
+  color: #fb1131;
+}
+.state-circle{
+  width: 20rpx;
+  height: 20rpx;
+  border-radius:50%;
+  border:4rpx solid;
+  margin:5rpx;
+}

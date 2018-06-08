@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/myInfo/myInfo",
+    "pages/friends/friends"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarTitleText": "Steam助手",
+    "navigationBarTextStyle": "#ffffff",
+    "navigationBarBackgroundColor": "#1296db"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./common/img/home_light.png",
+        "selectedIconPath": "./common/img/home_fill_light.png"
+      },
+      {
+        "pagePath": "pages/friends/friends",
+        "text": "好友",
+        "iconPath": "./common/img/group_light.png",
+        "selectedIconPath": "./common/img/group_fill_light.png"
+      },
+      {
+        "pagePath": "pages/myInfo/myInfo",
+        "text": "我的",
+        "iconPath": "./common/img/my.png",
+        "selectedIconPath": "./common/img/my_fill.png"
+      }
+    ],
+    "selectedColor": "#1296db",
+    "backgroundColor": "#fff"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <view class="userinfo-avatar">
+      <image src="{{detailInfo.avatarfull}}"></image>
+    </view>
+    <view class="sp-form-container">
+      <view class="sp-form-list">
+        <view class="sp-form-title">昵称</view>
+        <view class="sp-form-content">{{detailInfo.personaname}}</view>
+      </view>
+      <view class="sp-form-list">
+        <view class="sp-form-title">真实姓名</view>
+        <view class="sp-form-content">{{detailInfo.realname}}</view>
+      </view>
+      <view class="sp-form-list">
+        <view class="sp-form-title">当前状态</view>
+        <view class="sp-form-content">{{userStateObj[detailInfo.personastate]}}</view>
+      </view>
+      <!-- <view class="sp-form-list">
+        <view class="sp-form-title">标题文字</view>
+        <view class="sp-form-content">{{detailInfo.personaname}}</view>
+      </view> -->
+    </view>
+  </view>
+</view>

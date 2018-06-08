@@ -1,0 +1,27 @@
+<!--pages/friends/friends.wxml-->
+<view class="container">
+  <view class="sp-list-container" wx:if="{{friendList.length}}">
+    <view class="sp-list {{userStateObj[item.personastate].className}}" wx:key="steamid" wx:for="{{friendList}}">
+      <view class="sp-list-title">
+        <view class="sp-list-name">
+          <view>
+          {{item.personaname}}
+          </view>
+          <view wx:if="{{item.realname}}">
+          ({{item.realname}})
+          </view>
+          <view class="user-state {{userStateObj[item.personastate].className}}" wx:if="{{item.personastate > -1}}">
+            <view class="state-circle"></view>
+            {{userStateObj[item.personastate].name}}
+          </view>
+        </view>
+        <view wx:if="{{item.gameextrainfo}}">
+        正在玩：{{item.gameextrainfo}}
+        </view>
+      </view>
+      <view class="sp-list-img">
+        <image class="img-64" mode="aspectFit" src="{{item.avatarmedium}}"></image>
+      </view>
+    </view>
+  </view>
+</view>
