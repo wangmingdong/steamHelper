@@ -73,11 +73,13 @@ Page({
         if (res.statusCode == 200) {
           tempList = res.data.response.players;
           // 动态设置className
-          tempList.forEach(function (v, i) {
-
-          })
+          // 先按照状态排序，然后根据steamid排序
           tempList.sort(function (a, b) {
-            return b.personastate - a.personastate;
+            if (b.personastate == a.personastate) {
+              return b.steamid - a.steamid;
+            } else {
+              return b.personastate - a.personastate
+            }
           })
         }
         this.setData({
