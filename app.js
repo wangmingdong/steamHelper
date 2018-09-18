@@ -39,7 +39,7 @@ App({
     userInfo: null,
     userDetail: null,
     steamId: '76561198209191299',
-    steamKey: 'C4257EF7F24264ABC606493D29922EFF',
+    steamKey: '67EFDEEC3C9A4E0376C30481B1EB5C18',
     baidu:{
       appId: 20180606000172769,
       sign: 'Q_BWADMgfTtDVrZsGGZb'
